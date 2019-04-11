@@ -1,72 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.nav-link{
-color: #fff;
-font-weight: 500;
-font-size: 20px;
-margin: 5px;
-
+nav.fixed-top {
+    padding: 0 50px;
 }
 
-.nav-link:hover{
-color: black;
-opacity: 0.7;
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px;
 }
 
-.header{
+.nav-link:hover {
+    color: black;
+    opacity: 0.7;
+}
+
+.header { 
     margin-top: 60px;
  }
 
- .heading{
-    background:url('/assets/img/header.png') no-repeat !important;
+.heading {
     padding: 50px 50px;
     /* background-color: #2A56C6; */
     background-size: cover;
     background-position: center;
     /* width: 100vw; */
     height: 100vh;
- }
-
-.feature .container-fluid{
-    background-color: #FFFFFF !important;
-}
-.container-fluid{
-    background-color: #2A56C6 !important;
 }
 
-.header-link{
+.header-link {
     background: #6C63FF;
-border-radius: 10px;
-padding: 10px 20px;
-text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
 }
-.header-text{
-    color: #fff;
+
+.header-text {
+    color: #222121;
     font-size: 16px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.header-heading{
+
+.header-heading {
     font-weight: bold;
-    color: #fff;
+    color: #222121;
     padding-top: 60px;
-margin-top: 50px;
-}
-.header a {
-    text-decoration: none;
-    color: #FFFFFF
+    margin-top: 50px;
 }
 
-.header-img{
+.header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header-img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -76,8 +73,8 @@ margin-top: 50px;
 }
 
 .download-grp {
-    width: 50%;
-    height: 68px;
+    width: 40%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +82,7 @@ margin-top: 50px;
 
 .download {
     width: 45%;
-    height: 100%;
+    height: 74%;
     border-radius: 10px;
     background-size: contain;
     background-position: center;
@@ -97,68 +94,64 @@ margin-top: 50px;
 }
 
 .android {
-    background-image: url(../img/android.png);
+    background-image: url(../img/android.jpg);
 }
 
-#footer { 
-	background: #2A56C6;
-	padding-top:20px;
-	padding-left:15px;
-	padding-bottom: 30px;
+footer { 
+	background: #E5E5E5;
+	padding:20px;
 }
-.list-unstyled a{
-    color: #fff !important;
-    font-style:normal;
+
+.social-links-grp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.footer-icon {
+    border: 1px solid #222;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .track{
     padding: 50px 50px;
 }
 
-a{
-	color:#000000;
-	}
+a {
+    color:#000000;
+    font-style:normal;
+}
 	
-h4{
-    color: #FFFFFF;
+h4 {
+    color: #000000;
 	font-weight: normal;
 	font-size: 1em;
 }
-h5{
-    color: #FFFFFF  
+
+h5 {
+    color: #FFFFFF;
 }
+
 #Awe {
    color: #2A56C6 !important;
 }
 
-#email{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  box-sizing:border-box;
+#email {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
-
-
 button {
-	background-color: black;
-	}
-	
-#ig{
-	padding-right:20px;
-	}
-
-#fb{
-	padding-right:20px;
-	}
-
-#tw{
-	padding-right:20px;
-	}
-
-#yt{
-	padding-right:20px;
-	}
+    background-color: black;
+}
 
 .submit-button {
     background-color: #205DA5;
@@ -169,15 +162,12 @@ button {
     color: #ffffff;
 }
 
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 :root{
   --mainBlue:#205DA5;
   --subBlack:#222121;
 }
-
-
 
 .feature-icon{
   border: solid 1px var(--mainBlue);
@@ -223,8 +213,26 @@ h6 {
     width: 100%!important;
 }
 
-@media screen and (max-width: 400px) {
-  .feature-underline, .feature h1 {
-    margin-left: 80px!important;
-  }
+.container-fluid {
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .feature-underline, .feature h1,
+    .mobile-cont h1 {
+        font-size: 1.5rem;
+    }
+
+    .download-grp, .social-links-grp {
+        width: 100%;
+    }
+
+    .container-fluid, nav.fixed-top {
+        padding: 0 15px;
+    }
+
+    .reset-margin {
+        margin: 0 0 !important;
+    }
+
 }
